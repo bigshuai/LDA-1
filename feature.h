@@ -12,7 +12,9 @@ typedef struct {
     int *cnt;
 } document;
 
+
 extern document *feature_matrix(char *filename, int *maxid, int *maxfeat,int *ndoc);
+//文档特征矩阵   文件名，最大id，最大feat，ndoc
 extern void free_feature_matrix(document *matrix);
 
 #endif
