@@ -6,6 +6,7 @@
 #include "dmatrix.h"
 
 double **dmatrix(int rows, int cols){
+    //分配
     double **matrix;
     int i;
     
@@ -22,6 +23,7 @@ double **dmatrix(int rows, int cols){
 }
 
 void free_dmatrix(double **matrix, int rows){
+    //释放
     int i;
     for(i = 0;i < rows;i++){
         free(matrix[i]);
