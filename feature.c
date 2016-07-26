@@ -13,6 +13,7 @@ static int file_lines(FILE *fp);
 static int isspaces(char *s);
 
 document *feature_matrix(char *file_name, int *maxid, int *maxlen, int *ndoc){
+    ////文档特征矩阵   (文件名，最大id，最大长度，ndoc)
     document *d;
     int n, m;
     FILE *fp;
